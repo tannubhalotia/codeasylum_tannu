@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>blog starting page</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style type="text/css">
+
+    </style>
+	<link rel="stylesheet" type="text/css" href="assignmentt.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+</head>
+<body>
+    <div class="container">
+       <div id="hd" class="row" >
+       <div class="col-12" style="color:white; border:2px solid grey; background-color:#3A3C46; text-align: center; ">
+            <h1>"WORLD EXPRESSS"</h1>
+            </div>
+       </div>
+        <div class="row">
+           <!--   navbar -->
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark" style="width:100%;">
+                <a class="navbar-brand" href="#">NewsChannel</a>
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Link</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Dropdown
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                    <a class="dropdown-item" href="#">Sports</a>
+                                    <a class="dropdown-item" href="#">Bollywood</a>
+                                    <a class="dropdown-item" href="#">Buisness</a>
+                                    <a class="dropdown-item" href="#">TechHub</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" href="#">Politics</a>
+                                    <a class="dropdown-item" href="#">National</a>
+                                    <a class="dropdown-item" href="#">International</a>
+                                </div>
+                            </li>
+                        </ul>
+                        <form id="brr" class="form-inline my-2 my-lg-0">
+                            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                            <button type="button" class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+                            <!-- Button trigger modal -->
+                            <div id="br">
+                              <button id="b1" type="button" class="btn btn-primary" data-toggle="modal" data-target="#signinn" style="margin-left: 10px;">
+                                SignIn
+                              </button>
+                              <button id="b3" type="button" class="btn btn-primary" data-toggle="modal" data-target="#signoutt" style="margin-left: 10px; display:none;">
+                                SignOut
+                              </button>
+                              <button id="b2" type="button" class="btn btn-primary" data-toggle="modal" data-target="#signupp" style="margin-left: 10px; ">
+                                SignUp
+                              </button>
+                              <button id="b4" type="button" class="btn btn-dark" data-toggle="modal" data-target="#hellooo" style="margin-left: 10px;display: none;">
+                                
+                              </button>
+                              <!-- Modal -->
+                              <div class="modal fade" id="signinn" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel">SignIn</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                          <div class="form-group">
+                                            <label for="exampleInputUsername">Username</label>
+                                            <input type="text" class="form-control" id="exampleInputUsername" aria-describedby="emailHelp" placeholder="Enter username">
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword">Password</label>
+                                            <input type="password" class="form-control" id="exampleInputPassword" placeholder="Password">
+                                          </div>
+                                          <button onclick="signin()" type="submit" class="btn btn-primary" >Submit</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                             
+                              <div class="modal fade" id="signupp" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel1">SignUp</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      <form>
+                                          <div class="form-group">
+                                            <label for="exampleInputEmail1">Email address </label>
+                                            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                                            <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="exampleInputUsername1">Username </label>
+                                            <input type="text" class="form-control" id="exampleInputUsername1" placeholder="Username">
+                                          </div>
+                                          <div class="form-group">
+                                            <label for="exampleInputPassword1">Password </label>
+                                            <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Password">
+                                          </div>
+                                          <button onclick="signup()" type="submit" class="btn btn-primary">Submit</button>
+                                        </form>
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+                               <!-- Modal -->
+                              <div class="modal fade" id="signoutt" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+                                <div class="modal-dialog" role="document">
+                                  <div class="modal-content">
+                                    <div class="modal-header">
+                                      <h5 class="modal-title" id="exampleModalLabel2">SignOut</h5>
+                                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                        <span aria-hidden="true">&times;</span>
+                                      </button>
+                                    </div>
+                                    <div class="modal-body">
+                                      
+                                         Are you sure you want to logout?
+                                          <button onclick="signout()" type="submit" class="btn btn-primary">Yes</button>
+                                        
+                                    </div>
+                                    <div class="modal-footer">
+                                      <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                                      
+                                    </div>
+                                  </div>
+                                </div>
+                              </div>
+
+
+                              </div>
+                        </form>
+                    </div>
+            </nav>
+		</div>
+        <!-- image slider  -->
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+              </ol>
+              <div class="carousel-inner" style="width: 100% ; height: 30%">
+                <div class="carousel-item active">
+                  <img class="d-block w-100 h=50" src="a1.jpg" alt="First slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="a2.jpg" alt="Second slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="a3.jpg" alt="Third slide">
+                </div>
+                <div class="carousel-item">
+                  <img class="d-block w-100" src="a20.jpg" alt="Fourth slide">
+                </div>
+              </div>
+              <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+              </a>
+              <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+              </a>
+        </div> 
+        <div class="row">
+        <div class="col-lg-4 col-sm-12">
+        <div id="card1" class="card" style="width: 20rem;">
+              <img id="img1" class="card-img-top" src="a4.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 id="title1" class="card-title">Finally Married!!</h4>
+                <p id="para1" class="card-text">Virat Kohli and Anushka Sharma's marriage is definitely the wedding of the year. The wonder boy of cricket ended the year on a delightful note as he tied the knot with Bollywood actress and the queen of his heart, Anushka Sharma.</p>
+                <a href="page1.html" class="btn btn-primary">Read More>></a>
+              </div>
+        </div> 
+        </div>
+        <div class="col-lg-4 col-sm-12"> 
+        <div id="card2" class="card" style="width: 20rem; margin-left: 20px;">
+              <img id="img2" class="card-img-top" src="a10.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 id="title2" class="card-title">Manmohan statement on Modi: Jaitley flags Congress ‘misadventure’</h4>
+                <p id="para2" class="card-text">Talks and terror do not go together, says Minister on meeting with Pakistan officials.</p>
+                <a href="page2.html" class="btn btn-primary">Read More>></a>
+              </div>
+        </div> 
+        </div>
+        <div class="col-lg-4 col-sm-12">
+        <div id="card3" class="card" style="width: 20rem; margin-left: 20px;">
+              <img id="img3" class="card-img-top" src="a11.jpg" alt="Card image cap">
+              <div class="card-body">
+                <h4 id="title3" class="card-title">India to host 2023 World Cup.</h4>
+                <p id="para3" class="card-text">New Delhi: The Board of Control for Cricket in India (BCCI),on Monday,confirmed that India will be hosting the ICC Cricket World Cup on 2023 and the ICC Champions Trophy in 2021. </p>
+                <a href="page3.html" class="btn btn-primary">Read More>></a>
+                <!--<button onclick="helloworld();">changeimage</button>
+                 <script src="js8.js"></script>
+                  var helloworldd=helloworld
+                </script> -->
+              </div>
+        </div> 
+        </div>
+        </div>
+
+        <div id="footer" class="row">
+            <div class="card text-center" style="width: 100%";>
+              <div class="card-body">
+              <p class="card-text"> 
+              <ul style="list-style-type: none;"><li><a href="#">become a supporter</a></li>
+                                    <li><a href="#"> privacy policy</a></li>
+                                    <li><a href="#">make a contribution</a></li>
+                                    <li><a href="#">ask for help</a></li>                               
+                                    <li><a href="#">advertise with us</a></li>                                   
+                                    <li><a href="#">work for us </a></li>                                        
+                                    <li><a href="#">contact us</a></li>                                          
+                                    <li><a href="#">complaints and corrections</a></li>
+                                    <li><a href="#">terms and conditions</a></li>                         
+                </ul>
+                </p>
+              </div>
+              <div class="card-footer text-muted">
+                <a href="#"> twitter facebook instagram pininterest youtube</a>
+              </div>
+            </div>
+        </div>
+    </div>  	  	
+     <div id="ajax">
+      
+    </div>	
+    <!--<button onclick="loadDoc()">Submit</button> -->
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+<script type="text/javascript">
+          var rtt=localStorage.getItem("key1");
+          if(localStorage.getItem("key")==1)
+          {
+           document.getElementById("b4").style.display="";  
+           document.getElementById("b4").innerHTML="Hello"+" "+rtt;
+           document.getElementById("b3").style.display=""; 
+           document.getElementById("b1").style="display:none"; 
+           document.getElementById("b2").style="display:none";
+             
+
+          }
+          else
+          {
+             document.getElementById("b1").style.display=""; 
+           document.getElementById("b3").style="display:none";
+           document.getElementById("b4").style="display:none";
+           document.getElementById("b2").style.display=""; 
+          }
+     /* function signup()
+      {
+        //alert("hello");
+        var re1=document.getElementById("exampleInputEmail1").value;
+        var re2=document.getElementById("exampleInputUsername1").value;
+        var re3=document.getElementById("exampleInputPassword1").value;
+        //alert(re1);
+        //alert(re2);
+        //alert(re3);
+        var myjson = { "emailid": re1 ,"usernamee" : re2 ,"passwordd" : re3 };
+        //alert(array);
+        localStorage.setItem("key", JSON.stringify(array));
+
+        var arrList=[];
+        var dataList=null;
+        dataList=JSON.parse(localStorage.getItem("key"));
+        if(arrList!=null)
+        {
+        arrList=dataList;
+        arrList.push(myjson);
+        }
+         else{
+        arrList.push(myjson);
+        }
+        localStorage.setItem("key",JSON.stringify(arrList));
+      }*/
+        /*  xhttp.onreadystatechange=function()
+          {
+            if(this.readyState==4&&this.status==200)
+            {
+              var aa=JSON.parse(this.responseText);
+              document.getElementById("img1").src=aa[0].imageUrl;
+              document.getElementById("img1").src=aa[1].imageUrl;
+              document.getElementById("img1").src=aa[2].imageUrl;
+              document.getElementById("title1").textContent=aa[0].title;
+              document.getElementById("title2").textContent=aa[1].title;
+              document.getElementById("title3").textContent=aa[2].title;
+              document.getElementById("para1").textContent=aa[0].content;
+              document.getElementById("para2").textContent=aa[1].content;
+              document.getElementById("para3").textContent=aa[2].content;
+            }
+
+          } 
+          xhttp.open("GET","http://172.16.32.123:3000/blogs",true);
+           xhttp.setRequestHeader("Content-type","applications/x-www-form-urlencoded");
+           xhttp.send();
+
+           */
+      function signup(){
+        var arr=[];
+        arr=JSON.parse(localStorage.getItem("info"))||[];
+        var vals={
+       "ne":document.getElementById("exampleInputUsername1").value,
+      "mail":document.getElementById("exampleInputEmail1").value,
+      "ps":document.getElementById("exampleInputPassword1").value,
+        }
+        if(arr!=null&&arr.length<1)
+        {
+          arr.push(vals);
+        }
+        else{
+          arr.push(vals);
+        }
+
+      localStorage.setItem("info",JSON.stringify(arr));
+      alert("You have been successsfully registered!!");
+    }
+       //alert(localStorage.getItem("username"));
+       //localStorage.setItem("password", document.forms[0].pass.value);
+       //alert(localStorage.getItem("password"));
+       /*function hideLogout(){
+        document.getElementById('b2').style ="display:none";
+    }
+     
+    function hideLogin(){
+        document.getElementById('brr').style= "display:none";
+    } */
+
+       function signin()
+       {
+          var ree2=document.getElementById("exampleInputUsername").value;
+          var ree3=document.getElementById("exampleInputPassword").value;
+          //alert(ree2);
+          //alert(ree3);
+          var arrList=[];
+          arrList=JSON.parse(localStorage.getItem("info"))||[];
+          //alert(arrList);
+          var c=1;
+          //alert(ree2);alert(ree3);
+          for(var i=0; i < arrList.length; i++)
+          {
+            //alert("hello");
+              if(ree2==arrList[i].ne && ree3==arrList[i].ps)
+               {
+                  alert("you have been successfully signed in");  
+                  localStorage.setItem("key",1);
+                  localStorage.setItem("key1",ree2);
+                   c=0;
+                   break;
+               }
+          } 
+          if(c==1)
+          {
+            
+            alert("sorry! Invalid Username"); 
+            //localStorage.setItem("key",0);   
+          }
+       } 
+       function signout()
+       {
+          localStorage.setItem("key",0);
+          localStorage.removeItem("key1");
+
+
+       } 
+</script>
+</body>
+</html>

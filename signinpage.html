@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>signin page</title>
+	<style type="text/css" background-color: blue></style>
+</head>
+<body>
+    <form>
+    	<label >username:</label><br>
+    	<input id="user1" type="text" placeholder="username"><br><br>
+    	<label>password:</label><br>
+    	<input id="pass1" type="password" placeholder="password"><br><br>
+    	   
+    		<!-- <button type="button" onclick="randomfunction1();">getdata</button></a> -->
+
+    	<button onclick="signin();">signin</button></a>  
+    </form> 
+     <script type="text/javascript">
+        function register()
+{
+	    // document.getElementById("loginp").submit();
+     	localStorage.setItem("username", document.forms[0].user.value);
+     	alert(localStorage.getItem("username"));
+     	localStorage.setItem("password", document.forms[0].pass.value);
+     	alert(localStorage.getItem("password"));
+     }
+     function signin()
+{
+	    // document.getElementById("loginp").submit();
+     	if(document.forms[1].user1.value==localStorage.getItem("username")&&document.forms[1].pass1.value==localStorage.getItem("password"))
+     	   {alert("ok");}
+     	else
+     	    {alert("no");  }   
+     }
+     </script>
+</body>
+</html>

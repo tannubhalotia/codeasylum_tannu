@@ -1,0 +1,63 @@
+javascript  user interaction 
+validating inputs
+some logic
+additional components-popup,etc
+changing content dynamically
+only client side scripting language
+
+c is strongly typecasted language i.e. int i automatically i is assigned as integer
+but in js evrythng is var.
+
+to open a url window.popup
+
+
+###class 4
+
+javascript executes only after html is loaded.
+
+<button onclick="helloworld
+
+session storage     
+cookies
+web sql             1 gb
+local storage   1 gb
+
+
+
+
+#wednesday 14th
+   get-to fetch some data to server (not organized request)
+   put-to send some data and store them in database without processing
+   post-to send some data and store them in database with processing (organized request)
+delete-
+
+to fetch something using parameters using get request. ?count=5
+
+option request tell us that server will accept head and get request.
+
+the server only accepts json data and urlencoded data as parameters.
+
+
+when we use authorization header in our code then we need some credentials....the server requires some credentials for the post requests.(
+xhr.withcredentisals=true)
+
+in get request we pass our own data in the url itself
+in post req. we can send the parameters in body of urlencoded selected just below the request option or as raw data(json object).
+
+promise= assigning a future value to a variaable.
+js initialisations(initially var)
+now its let and const
+const=constant
+let= global scope even within a function.
+var=global if defined outside a function and local when defined in a function.
+link(https://stackoverflow.com/questions/762011/whats-the-difference-between-using-let-and-var-to-declare-a-variable)
+
+
+how to create a promise
+with syntax: new Promise()----u can either reject or resolve a promise
+=>fat arrow((resolve,reject)=>)
+             representation of a function with the values in () as parameters
+
+
+
+

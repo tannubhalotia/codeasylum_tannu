@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+		<script type="text/javascript">
+			function blog(id,title)
+			{
+				this.id=id;
+				this.title=title;
+				this.log=function(){
+					console.log(this);
+				}
+			}
+			var blog1=new blog("1","abc");
+			blog1.log();
+			blog1.body="bla";
+			blog1.log();
+			blog.prototype.log1=function()
+			{
+				console.log(this);
+			}
+			var blog2= new blog("2","yy");
+			blog2.log();
+		</script>
+</body>
+</html>

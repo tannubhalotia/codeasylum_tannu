@@ -1,0 +1,68 @@
+ for button :
+       		button
+ 		input type="button"
+		using class in css
+ 		
+
+compiler based languages c++,c,java (compile and then run)
+interpreter based lang python (run)
+high level low level
+client side server side
+client side is like what we see on a webpage
+server side is something going on behind the scenes like how the details are fetched on request what details are fetched .
+front end(client side) and back end(server side)
+
+client side languages                       server side lang.
+html css javascript					java  nodejs the javascript which can be used on server side php ruby pearl python
+
+bootstrap,angularjs(google),reactjs(facebook) is framework for UI
+django is framework for UX
+framework is somthing which is already done is contained in frameworks and we use those frameworks for our use.
+API application programming interface it is basically a code
+
+                                                                                                   API'S
+get ;map where 2 locations given.
+put; facebook
+post; 
+git is a 
+gi
+
+
+metatags data about data. metatags used to provide general info
+inline tags takes space only used for content
+block tags full screen
+span div
+
+how size is fixed like 
+
+screen into parts
+1. positioning
+2.
+
+
+class = container take full screen
+class=row full screen inside container
+col-12=column inside rows
+
+
+sizes used by bootstrap
+xs   old phones
+s   phones
+md   tablets
+l   laptops
+xl   full hd laptops
+each has breakpoint
+
+
+git
+---version control system
+---collaboration
+
+media tags(media query)
+
+
+
+
+
+
+                                                                                                     

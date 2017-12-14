@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Form Actions</title>
+</head>
+<body>
+    <!--<form action="https://172.16.32.123.3000/post" method="POST">
+    	enter your name: <input id="name" type="text" name="username">
+    	<button type="submit">submit</button>
+    	<button type="reset">reset</button>
+    </form> -->
+    
+    <div id="ajax">
+    	
+    </div>
+    <form>
+    	<label >username:</label><br>
+    	<input id="user" type="text" placeholder="username"><br><br>
+    	<label>password:</label><br>
+    	<input id="pass" type="password" placeholder="password"><br><br>
+    	<!--<button onclick="register();">register</button></a>   -->
+    </form>
+
+    <button onclick="loadDoc()">Submit</button>
+    <script type="text/javascript"> 
+    	function loadDoc()
+    	{
+            var re=document.getElementById("user").value;
+            var re1=document.getElementById("pass").value;
+            var myjson={"user":re,"pass":re1};
+    		var xhttp = new XMLHttpRequest();
+    		xhttp.onreadystatechange=function(){
+    			if(this.readyState==4&&this.status==200)
+    			{
+    				document.getElementById("ajax").innerHTML=this.responseText;
+    				//var re1=document.getElementById("pass").innerHTML=this.responseText;
+    				
+    			}
+    		};
+           //xhttp.open("GET","http://172.16.32.123:3000/get?username="+re+"password="+re1,true);
+           xhttp.open("POST","http://172.16.32.123:3000/post",true);
+           xhttp.setRequestHeader("Content-type","applications/json");
+           xhttp.send(JSON.stringify(myjson));
+
+    	}
+    </script>
+</body>
+</html>
